@@ -36,7 +36,7 @@ In this implementation, we explore several ways for obtaining rewards. For insta
 
 ## Dataset
 
-To train our model using the ["Change My View"](https://www.reddit.com/r/changemyview/) Reddit forum that consists of opposing views. 
+To train our model we create a dataset using the ["Change My View"](https://www.reddit.com/r/changemyview/) Reddit forum that consists of opposing views. 
 It is an appropriate dataset for training the Opinion Generator since it contains discusssions on various topics with the main goal to understand opposing viewpoints.
 We preprocess the raw data and create TFRecords for training and testing.
 
