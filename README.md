@@ -25,7 +25,7 @@ right). The temporal dimension of a sentence among all layers is preserved.</sub
 The OpinionNet is capable of computing the factorized distribution. It consists of three parts:
 1. The CNN encoder, that models sentence representation.
 2. Temporal block, that captures the essence of opinion and relations between sentences.
-3. The CNN decoder, that is conditioned on outputs of temporal block.
+3. The CNN decoder, that is conditioned on outputs of temporal block. It can be realized in word level or character level.
 
 Objective function consists of:
 
@@ -36,7 +36,9 @@ In this implementation, we explore several ways for obtaining rewards. For insta
 
 ## Dataset
 
-To train our model using the "Change My View" Reddit forum that consists of opposing views. We parse the corpora and preprocess the raw data into TFRecords.
+To train our model using the ["Change My View"](https://www.reddit.com/r/changemyview/) Reddit forum that consists of opposing views. 
+It is an appropriate dataset for training the Opinion Generator since it contains discusssions on various topics with the main goal to understand opposing viewpoints.
+We preprocess the raw data and create TFRecords for training and testing.
 
 
 ## Credits
